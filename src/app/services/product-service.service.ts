@@ -5,9 +5,10 @@ import { Product } from '../data';
   providedIn: 'root'
 })
 export class ProductService {
-  private products: Product[] = [
+    productImg: string = 'https://placehold.jp/150x150.png'
+    private products: Product[] = [
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 1',
         discount: 10,
         price: 100,
@@ -20,7 +21,7 @@ export class ProductService {
         tags: ['electronics', 'new', 'sale']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 2',
         discount: 5,
         price: 150,
@@ -33,7 +34,7 @@ export class ProductService {
         tags: ['furniture', 'popular']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 3',
         discount: 15,
         price: 200,
@@ -46,7 +47,7 @@ export class ProductService {
         tags: ['clothing', 'discount']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 4',
         discount: 0,
         price: 300,
@@ -59,7 +60,7 @@ export class ProductService {
         tags: ['sports', 'new']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 5',
         discount: 25,
         price: 80,
@@ -72,7 +73,7 @@ export class ProductService {
         tags: ['outdoor', 'clearance']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 6',
         discount: 10,
         price: 120,
@@ -85,7 +86,7 @@ export class ProductService {
         tags: ['kitchen', 'best-seller']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 7',
         discount: 30,
         price: 50,
@@ -98,7 +99,7 @@ export class ProductService {
         tags: ['beauty', 'gift']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 8',
         discount: 12,
         price: 90,
@@ -111,7 +112,7 @@ export class ProductService {
         tags: ['clothing', 'eco-friendly']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 9',
         discount: 0,
         price: 500,
@@ -124,7 +125,7 @@ export class ProductService {
         tags: ['luxury', 'premium']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 10',
         discount: 20,
         price: 75,
@@ -137,7 +138,7 @@ export class ProductService {
         tags: ['tech', 'sale']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 11',
         discount: 18,
         price: 130,
@@ -150,7 +151,7 @@ export class ProductService {
         tags: ['home', 'popular']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 12',
         discount: 35,
         price: 55,
@@ -163,7 +164,7 @@ export class ProductService {
         tags: ['fashion', 'limited']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 13',
         discount: 0,
         price: 600,
@@ -176,7 +177,7 @@ export class ProductService {
         tags: ['gadgets', 'new']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 14',
         discount: 8,
         price: 95,
@@ -189,7 +190,7 @@ export class ProductService {
         tags: ['sports', 'sale']
     },
     {
-        image: 'https://via.placeholder.com/150',
+        image: this.productImg,
         name: 'Product 15',
         discount: 22,
         price: 110,

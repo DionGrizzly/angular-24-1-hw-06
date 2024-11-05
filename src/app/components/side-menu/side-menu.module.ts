@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
+import { SideMenuComponent } from './side-menu.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [SideMenuComponent],
   imports: [
-    CommonModule,
-    ModalDialogComponent
-  ]
+    CommonModule
+  ],
+  exports: [SideMenuComponent]
 })
 export class SideMenuModule { }
