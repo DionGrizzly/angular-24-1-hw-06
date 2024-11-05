@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../data';
-import { ProductService } from '../services/product-service.service';
+import { Product } from '../../data';
+import { ProductService } from '../../services/product-service.service';
 
 @Component({
   selector: 'main-table',
