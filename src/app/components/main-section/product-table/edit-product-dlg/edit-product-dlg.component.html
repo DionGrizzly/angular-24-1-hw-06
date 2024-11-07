@@ -1,0 +1,30 @@
+<!--
+<mat-form-field appearance="fill">
+    <mat-label>Продукт</mat-label>
+    <input matInput [(ngModel)]="data.name">
+</mat-form-field>
+-->
+
+<h1 mat-dialog-title>{{ TITLE }}</h1>
+<div mat-dialog-content id="mat-dialog-content">
+    <mat-form-field appearance="fill">
+        <mat-label>Продукт</mat-label>
+        <input matInput [value]="data.name">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Ціна</mat-label>
+        <input matInput [value]="data.price">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Знижка (%)</mat-label>
+        <input matInput [value]="data.discount">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>SKU</mat-label>
+        <input matInput [value]="data.sku">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Скасувати</button>
+    <button mat-button cdkFocusInitial matTooltip="В розробці" matTooltipPosition="above">Зберегти</button>
+</div>

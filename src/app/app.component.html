@@ -1,7 +1,14 @@
-<div id="app-main">
-    <side-menu></side-menu>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <side-menu></side-menu>
+    </mat-drawer>
+
     <div id="main-container">
+        <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
         <section-header></section-header>
         <main-table></main-table>
     </div>
-</div>
+
+</mat-drawer-container>

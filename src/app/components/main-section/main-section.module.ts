@@ -8,15 +8,19 @@ import { ProductNameComponent } from './product-table/table-columns/product-name
 import { ProductPriceComponent } from './product-table/table-columns/product-price/product-price.component';
 import { ProductSkuComponent } from './product-table/table-columns/product-sku/product-sku.component';
 import { ProductTagsComponent } from './product-table/table-columns/product-tags/product-tags.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatChipsModule } from '@angular/material/chips';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { EditProductDlgComponent } from './product-table/edit-product-dlg/edit-product-dlg.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,19 +31,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductCountryComponent,
     ProductTagsComponent,
     ProductActionsComponent,
-    PricePipe
+    PricePipe,
+    EditProductDlgComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatChipsModule,
-    MatButtonModule,
-    MatIconModule,
     MatMenuModule,
-    MatTooltipModule
-],
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatChipsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
+  ],
   exports: [MainTableComponent]
 })
 export class MainSectionModule { }
